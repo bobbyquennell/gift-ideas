@@ -196,11 +196,21 @@ body {
     &.flext-item-center {
       align-self: center;
     }
+    &.flex-item-mobile-top {
+      @include bp-medium {
+        order: 0;
+      }
+    }
+    &.flex-item-mobile-base {
+      @include bp-medium {
+        order: 1;
+      }
+    }
     box-sizing: border-box;
     flex: 1;
     text-align: center;
     img {
-      width: 80%;
+      width: 100%;
       margin: auto;
     }
     @include bp-medium{
@@ -264,20 +274,22 @@ body {
   p {
     max-width: 100%;
     &.item-content-details {
-      padding-left: 5px;
-      padding-right: 5px;
-      min-height: 160px;
-      @include bp-large {
-        height: 260px;
-      }
+      padding: 5px 20%;
+      min-height: 50px;
+      // @include bp-large {
+      //   height: 260px;
+      // }
+    }
+    &.hight-xl {
       @include breakpoint(799px) {
-        height: 80px;
+        min-height: 60px;
         line-height: 1.2;
+        margin: 0;
       }
     }
   }
   figure {
-    margin: 10px;
+    margin: 10px 5px;
     img {
       &.thrink {
         width: 80%;
@@ -475,25 +487,25 @@ body {
 //===============
 //  specific details
 //===============
-.caption {
-  p {
-    min-height: 125px;
-    max-width: 100%;
-    @include breakpoint(900px) {
-      min-height: 140px;
-      margin: 0;
-    };
-    @include breakpoint(870px) {
-      min-height: 200px;
-    };
-    @include breakpoint(799px) {
-      min-height: 80px;
-    };
-  }
-  h2 {
-    margin: 0;
-  }
-}
+// .caption {
+//   p {
+//     min-height: 125px;
+//     max-width: 100%;
+//     @include breakpoint(900px) {
+//       min-height: 140px;
+//       margin: 0;
+//     };
+//     @include breakpoint(870px) {
+//       min-height: 200px;
+//     };
+//     @include breakpoint(799px) {
+//       min-height: 80px;
+//     };
+//   }
+//   h2 {
+//     margin: 0;
+//   }
+// }
 .slick-dots {
   margin: 0 !important;
   padding: 0 !important;
