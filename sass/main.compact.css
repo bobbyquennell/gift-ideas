@@ -83,7 +83,7 @@ html, body { height: 80%; margin: 0; padding: 0; }
 
 .lp-container header.lp { padding: 0; }
 
-.lp-container header article { padding-top: 30%; }
+.lp-container header article { padding: 30% 0 30px; }
 
 .lp-container img.header-img { width: 100%; }
 
@@ -153,8 +153,6 @@ html, body { height: 80%; margin: 0; padding: 0; }
 .item-content figure { margin: 10px 5px; }
 
 .item-content figure img.thrink { width: 80%; display: initial !important; }
-
-@media only screen and (max-width: 799px) { .item-content figure img.thrink { width: 40%; } }
 
 .item-content figure img.instagram { width: 80%; display: initial !important; }
 

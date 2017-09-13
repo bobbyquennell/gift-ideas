@@ -101,7 +101,7 @@ body {
       padding: 0;
     }
     article {
-      padding-top: 30%;
+      padding: 30% 0 30px;
       //min-height:400px;
     }
   }
@@ -293,9 +293,9 @@ body {
     img {
       &.thrink {
         width: 80%;
-        @include breakpoint(799px) {
-          width: 40%;
-        };
+        // @include breakpoint(799px) {
+        //   width: 40%;
+        // };
         display: initial !important;
       }
       &.instagram {
