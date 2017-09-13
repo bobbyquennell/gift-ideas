@@ -276,9 +276,11 @@ body {
     &.item-content-details {
       padding: 5px 20%;
       min-height: 50px;
-      // @include bp-large {
-      //   height: 260px;
-      // }
+      @include bp-medium {
+        padding: 5px 20%;
+        min-height: 10px;
+        @include font-size(18px);
+      };
     }
     &.hight-xl {
       @include breakpoint(799px) {
@@ -293,8 +295,8 @@ body {
     img {
       &.thrink {
         width: 80%;
-        // @include breakpoint(799px) {
-        //   width: 40%;
+        // @include bp-medium {
+        //    width: 100%;
         // };
         display: initial !important;
       }
@@ -357,12 +359,12 @@ body {
 .title-sm {
   @include font-size(20px);
   @include bp-medium {
-    @include font-size(16px);
+    @include font-size(24px);
   };
   @include bp-small {
     @include font-size(15px);
   };
-  font-family: $font-boldcond;
+  font-family: $font-blackcond;
   text-transform: uppercase;
   color: $black;
   margin: 20px;

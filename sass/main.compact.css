@@ -148,6 +148,8 @@ html, body { height: 80%; margin: 0; padding: 0; }
 
 .item-content p.item-content-details { padding: 5px 20%; min-height: 50px; }
 
+@media only screen and (max-width: 40em) { .item-content p.item-content-details { padding: 5px 20%; min-height: 10px; font-size: 18px; font-size: 1.125rem; } }
+
 @media only screen and (max-width: 799px) { .item-content p.hight-xl { min-height: 60px; line-height: 1.2; margin: 0; } }
 
 .item-content figure { margin: 10px 5px; }
@@ -176,9 +178,9 @@ html, body { height: 80%; margin: 0; padding: 0; }
 
 @media only screen and (max-width: 30em) { .title-lg { font-size: 30px; font-size: 1.875rem; } }
 
-.title-sm { font-size: 20px; font-size: 1.25rem; font-family: "Interstate-BoldCond", sans-serif; text-transform: uppercase; color: #231f20; margin: 20px; }
+.title-sm { font-size: 20px; font-size: 1.25rem; font-family: "Interstate-BlackCond", sans-serif; text-transform: uppercase; color: #231f20; margin: 20px; }
 
-@media only screen and (max-width: 40em) { .title-sm { font-size: 16px; font-size: 1rem; } }
+@media only screen and (max-width: 40em) { .title-sm { font-size: 24px; font-size: 1.5rem; } }
 
 @media only screen and (max-width: 30em) { .title-sm { font-size: 15px; font-size: 0.9375rem; } }
 
